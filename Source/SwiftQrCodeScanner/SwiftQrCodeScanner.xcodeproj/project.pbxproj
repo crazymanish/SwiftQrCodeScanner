@@ -10,6 +10,12 @@
 		8439740A220F1F7500485B5B /* SwiftQrCodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84397400220F1F7500485B5B /* SwiftQrCodeScanner.framework */; };
 		8439740F220F1F7500485B5B /* SwiftQrCodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439740E220F1F7500485B5B /* SwiftQrCodeScannerTests.swift */; };
 		84397411220F1F7500485B5B /* SwiftQrCodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 84397403220F1F7500485B5B /* SwiftQrCodeScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84397423220F209D00485B5B /* QRCodeScannerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439741B220F209D00485B5B /* QRCodeScannerViewControllerDelegate.swift */; };
+		84397424220F209D00485B5B /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439741C220F209D00485B5B /* QRCodeScannerViewController.swift */; };
+		84397425220F209D00485B5B /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439741E220F209D00485B5B /* QRCodeScanner.swift */; };
+		84397426220F209D00485B5B /* QRCodeScannerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439741F220F209D00485B5B /* QRCodeScannerResult.swift */; };
+		84397427220F209D00485B5B /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397421220F209D00485B5B /* QRCodeScannerView.swift */; };
+		84397428220F209D00485B5B /* ScannerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397422220F209D00485B5B /* ScannerOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		84397409220F1F7500485B5B /* SwiftQrCodeScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftQrCodeScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439740E220F1F7500485B5B /* SwiftQrCodeScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftQrCodeScannerTests.swift; sourceTree = "<group>"; };
 		84397410220F1F7500485B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8439741B220F209D00485B5B /* QRCodeScannerViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8439741C220F209D00485B5B /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		8439741E220F209D00485B5B /* QRCodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
+		8439741F220F209D00485B5B /* QRCodeScannerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerResult.swift; sourceTree = "<group>"; };
+		84397421220F209D00485B5B /* QRCodeScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		84397422220F209D00485B5B /* ScannerOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,9 @@
 		84397402220F1F7500485B5B /* SwiftQrCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				8439741D220F209D00485B5B /* Scanner */,
+				84397420220F209D00485B5B /* ScannerView */,
+				8439741A220F209D00485B5B /* ScannerViewController */,
 				84397403220F1F7500485B5B /* SwiftQrCodeScanner.h */,
 				84397404220F1F7500485B5B /* Info.plist */,
 			);
@@ -84,6 +99,33 @@
 				84397410220F1F7500485B5B /* Info.plist */,
 			);
 			path = SwiftQrCodeScannerTests;
+			sourceTree = "<group>";
+		};
+		8439741A220F209D00485B5B /* ScannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8439741B220F209D00485B5B /* QRCodeScannerViewControllerDelegate.swift */,
+				8439741C220F209D00485B5B /* QRCodeScannerViewController.swift */,
+			);
+			path = ScannerViewController;
+			sourceTree = "<group>";
+		};
+		8439741D220F209D00485B5B /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				8439741E220F209D00485B5B /* QRCodeScanner.swift */,
+				8439741F220F209D00485B5B /* QRCodeScannerResult.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		84397420220F209D00485B5B /* ScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				84397421220F209D00485B5B /* QRCodeScannerView.swift */,
+				84397422220F209D00485B5B /* ScannerOverlayView.swift */,
+			);
+			path = ScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84397423220F209D00485B5B /* QRCodeScannerViewControllerDelegate.swift in Sources */,
+				84397424220F209D00485B5B /* QRCodeScannerViewController.swift in Sources */,
+				84397425220F209D00485B5B /* QRCodeScanner.swift in Sources */,
+				84397426220F209D00485B5B /* QRCodeScannerResult.swift in Sources */,
+				84397428220F209D00485B5B /* ScannerOverlayView.swift in Sources */,
+				84397427220F209D00485B5B /* QRCodeScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +439,7 @@
 		84397418220F1F7500485B5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftQrCodeScannerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +457,7 @@
 		84397419220F1F7500485B5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftQrCodeScannerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
