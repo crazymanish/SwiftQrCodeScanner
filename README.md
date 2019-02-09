@@ -2,7 +2,8 @@
 A light weight Qr code scanner framework written in Swift.
 -------------------
 
-SwiftQrCodeScanner is a framework which has capability to scan any Qr code by using the iOS device. It's also supports the `blur-overlay` around the scanning area.
+SwiftQrCodeScanner is a framework which has capability to scan any Qr code by using the iOS device. It's also supports the `blur-overlay` around the scanning area. i.e.
+![](SwiftQrCodeScanner.gif)
 
 ## Usage
 - **SwiftQrCodeScanner** framework have **QRCodeScannerViewController** as core class, which responsible for opening the back camera of iOS device & scan the QR code.
